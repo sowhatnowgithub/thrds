@@ -1,5 +1,7 @@
 # Thrds (spelled threads)- Real-time Messaging with PHP and OpenSwoole
 
+**I just realised i am going to add an AI System to chat back, to feels less lonely with personality.**
+
 **Thrds** is a real-time messaging platform built using **PHP**, **OpenSwoole**, and **WebSocket** for fast and efficient communication between users. With the ability to create threaded discussions, broadcast messages to all connected clients, and store messages persistently in a MySQL database, this system is designed to handle high-performance real-time communication at scale.
 
 ## Key Features
@@ -9,7 +11,17 @@
 - **Worker Process Communication**: Utilizes OpenSwoole's tables for sharing data between worker processes, ensuring efficient message broadcasting and scalability.
 - **Persistent Message Storage**: A task manager that stores messages in a MySQL database (InnoDB engine) for durability, even in the case of system restarts.
 * Currently there is no authorisation process, for the users, so anyone with the link can message.
-* There is also an issue with the windows os, there is a bug in the css.
+* There is also an issue with the windows os, there is a bug in the css.(checkout the thrds.css in js)
+
+
+
+## Future Developments
+
+- **Make an AI system to chat back, caues i know only i will use it😂**
+- **Create Authorisation Process for community trusted messaging**
+- **Make the Styling and UI better**
+- **Planning to host it**
+- **Add Commenting and reactions**
 ## Architecture Overview
 
 ### Frontend
@@ -30,4 +42,5 @@ Messages and threads are stored in a **MySQL database** using the **InnoDB engin
 ## License
 
 This project is licensed under the MIT License.
+
 
