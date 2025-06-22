@@ -18,8 +18,8 @@ $createMessage = 'CREATE TABLE message (
 )';
 
 
-$username = "pavan";
-$password = "pass123";
+$username = "enterusername";
+$password = "enterpassword";
 
 
 try {

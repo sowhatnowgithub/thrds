@@ -8,8 +8,8 @@
 	</head>
 	<body>
 	<?php
-	$user = "pavan"; 
-	$pass = "pass123";
+	$user = "username"; 
+	$pass = "password";
 	try{
 		$db = new PDO("mysql:host=localhost;dbname=test",$user, $pass);
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

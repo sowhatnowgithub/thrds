@@ -11,7 +11,6 @@
 
 <script>
  var endPoint = 'ws://127.0.0.1:9501';
-//var endPoint = 'https://d0bf-223-228-106-27.ngrok-free.app';
 const socket = new WebSocket(endPoint);
 const form = document.querySelector('form');
 const inputField = document.querySelector('input[name="text"]');
