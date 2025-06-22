@@ -1,5 +1,5 @@
 <?php
-
+include "./../mysqlcredentials.php";
 use OpenSwoole\WebSocket\Server;
 use OpenSwoole\http\Request;
 use OpenSwoole\WebSocket\Frame;
@@ -68,10 +68,9 @@ $server->on('Finish', function($server, $task_id, $data)use($table){
 	} 
 });
 
-$server->on('Task', function($server, $task){
+$server->on('Task', function($server, $task)use($user, $pass){
 	$data = $task->data;
-	$user = "username";
-	$pass = "password";
+
 	try {
 	$db = new PDO("mysql:host=localhost;dbname=test", $user, $pass);
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

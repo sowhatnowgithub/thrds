@@ -1,5 +1,7 @@
 <?php
 
+include "mysqlcredentials.php";
+
 $createThrd = 'create table thrd (
 	private_thrdid int not null auto_increment,
 	public_thrdid varchar(100) not null,
@@ -17,9 +19,6 @@ $createMessage = 'CREATE TABLE message (
 	message_date datetime not null
 )';
 
-
-$username = "enterusername";
-$password = "enterpassword";
 
 
 try {
