@@ -41,6 +41,6 @@ Messages and threads are stored in a **MySQL database** using the **InnoDB engin
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the apache 2.0 License.
 
 
